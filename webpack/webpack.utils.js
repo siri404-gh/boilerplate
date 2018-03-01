@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
@@ -50,6 +51,11 @@ module.exports = {
   }),
   manifestPlugin: new ManifestPlugin({
     fileName,
+  }),
+  provide: new webpack.ProvidePlugin({
+    React: 'react',
+    Component: ['react', 'Component'],
+    ReactDOM: ['react-dom'],
   }),
   stats: {
     warnings: false,

@@ -22,10 +22,14 @@ module.exports = {
       "single"
     ],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off"
   },
   "env": {
     "browser": true,
     "node": true,
     "jasmine": true
+  },
+  "globals": {
+    "ReactDOM": true,
   },
 };

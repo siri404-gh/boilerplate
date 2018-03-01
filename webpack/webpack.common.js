@@ -1,7 +1,7 @@
 const path = require('path');
 
 const {
-  entry, dist, outputFileName, _module, resolveExtensions, stats,
+  entry, dist, outputFileName, _module, resolveExtensions, stats, provide,
 } = require('./webpack.utils');
 
 module.exports = {
@@ -15,7 +15,9 @@ module.exports = {
     extensions: resolveExtensions,
     modules: [path.join(__dirname, 'components'), 'node_modules'],
   },
-  plugins: [],
+  plugins: [
+    provide,
+  ],
   module: _module,
   stats,
 };

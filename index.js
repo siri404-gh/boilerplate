@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './src/components/web/app/app';
 
 ReactDOM.render(
@@ -17,8 +15,7 @@ ReactDOM.render(
 // }
 
 if (module.hot) {
-  module.hot.accept(App, function () {
-    console.log('Accepting the updated App!');
+  module.hot.accept(App, () => {
     App();
   });
 }

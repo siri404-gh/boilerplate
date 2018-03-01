@@ -1,3 +1,6 @@
 Yarn init
 Configure eslint
 Configure editorconfig
+Webpack
+  Dev build
+  Prod build

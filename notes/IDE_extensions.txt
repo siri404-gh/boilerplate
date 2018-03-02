@@ -5,3 +5,7 @@ JSX Support for Visual Studio Code
 Path Intellisense
 Relative path support for Visual Studio Code
 vscode-icons
+EJS Language Support
+Git History, Search and More (including git log)
+Git Blame
+Git Lens

@@ -1,2 +1,7 @@
 Why ESLint - https://youtu.be/hppJw2REb8g
 Why Webpack
+Difference between dev build and prod build
+Sourcemaps
+Uglification
+Minification
+Difference between dependencies & devDependencies

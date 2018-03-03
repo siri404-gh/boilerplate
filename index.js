@@ -1,18 +1,7 @@
+import React from 'react';
 import App from './src/components/web/app/app';
 
-ReactDOM.render(
-  <div>
-    <App />
-  </div>,
-  document.getElementById('root'),
-);
-
-// if (module.hot) {
-//   module.hot.accept(() => {
-//     const nextRootReducer = require('./src/reducers/reducer');
-//     store.replaceReducer(nextRootReducer);
-//   });
-// }
+ReactDOM.render(<App />, document.getElementById('root'));
 
 if (module.hot) {
   module.hot.accept(App, () => {

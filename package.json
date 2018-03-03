@@ -45,8 +45,8 @@
     "cleanup": "./node_modules/.bin/rimraf TMPDIR/react-* node_modules && yarn",
     "eject": "react-native-scripts eject",
     "start:mobile": "react-native-scripts start",
-    "start:mobile:dev": "react-native-scripts android",
-    "start:mobile:dev:ios": "react-native-scripts ios",
+    "start:mobile:android": "react-native-scripts android",
+    "start:mobile:ios": "react-native-scripts ios",
     "test:mobile": "node node_modules/jest/bin/jest.js"
   },
   "jest": {

@@ -6,9 +6,9 @@ Webpack
   Prod build
 Express Server
 React
+React Native
 ----
 Redux
-React Native
 Esdocs
 Unit Test Cases
 BDD
@@ -20,3 +20,4 @@ Flow
 Firebase
 Heroku
 Travis
+Commitizen

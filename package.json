@@ -2,17 +2,19 @@
   "name": "bartrr",
   "version": "1.0.0",
   "description": "App to exchange goods and services",
-  "main": "index.js",
   "repository": "https://gitlab.com/sreerampr/bartrr.git",
   "author": "Sreeram Padmanabhan <sreeram.com@gmail.com>",
   "license": "MIT",
+  "private": true,
   "dependencies": {
+    "expo": "^25.0.0",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
     "babel-loader": "^7.1.3",
     "babel-preset-react-native": "^4.0.0",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.10",
     "html-webpack-plugin": "^3.0.3",
-    "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "style-loader": "^0.20.2",
     "webpack": "^4.0.1",
@@ -30,11 +32,24 @@
     "express": "^4.16.2",
     "mime": "^2.2.0",
     "morgan": "^1.9.0",
-    "webpack-dev-server": "^3.1.0"
+    "webpack-dev-server": "^3.1.0",
+    "react-native-scripts": "1.11.1",
+    "jest-expo": "25.0.0",
+    "react-test-renderer": "16.2.0"
   },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src -o=./reports/.eslint/index.html -f=html",
     "build": "./node_modules/.bin/webpack --config=webpack/webpack.config.js --env=prod --progress --profile --colors",
-    "build:dev": "./node_modules/.bin/webpack-dev-server --config=webpack/webpack.config.js --env=dev --progress --profile --colors --open --hot --inline"
+    "build:dev": "./node_modules/.bin/webpack-dev-server --config=webpack/webpack.config.js --env=dev --progress --profile --colors --open --hot --inline",
+    "cleanup": "./node_modules/.bin/rimraf TMPDIR/react-* node_modules && yarn",
+    "eject": "react-native-scripts eject",
+    "start:mobile": "react-native-scripts start",
+    "start:mobile:dev": "react-native-scripts android",
+    "start:mobile:dev:ios": "react-native-scripts ios",
+    "test:mobile": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
   }
 }

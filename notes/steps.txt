@@ -1,6 +1,22 @@
-Yarn init
-Configure eslint
-Configure editorconfig
+Yarn
+Eslint
+Editorconfig
 Webpack
   Dev build
   Prod build
+Express Server
+React
+----
+Redux
+React Native
+Esdocs
+Unit Test Cases
+BDD
+Pa11y
+Sitespeed
+Docker
+Vagrant
+Flow
+Firebase
+Heroku
+Travis

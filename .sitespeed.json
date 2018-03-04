@@ -1,0 +1,10 @@
+{
+  "browsertime": {
+    "iterations": 1,
+    "browser": "chrome"
+  },
+  "plugins": {
+    "disable": []
+  },
+  "utc": true
+}

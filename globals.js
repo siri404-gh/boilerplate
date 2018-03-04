@@ -6,6 +6,8 @@ const reports = `${outputDir}_reports/`;
 const coverageDir = `${reports}_coverage/`;
 const eslintDir = `./${reports}/_eslint/`;
 const bddDir = `${reports}_cucumber/`;
+const pa11yDir = `${reports}_pa11y/`;
+const sitespeedDir = `${reports}_sitespeed/`;
 const logs = './*.log';
 
 module.exports = {
@@ -14,6 +16,8 @@ module.exports = {
   docs,
   eslintDir,
   bddDir,
+  pa11yDir,
+  sitespeedDir,
   port: process.env.NODE_ENV || 5000,
   karma: {
     browsers: ['PhantomJS'],

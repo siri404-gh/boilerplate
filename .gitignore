@@ -8,6 +8,7 @@ _reports
 output
 .output
 _output
+.env.sh
 
 # expo
 .expo/

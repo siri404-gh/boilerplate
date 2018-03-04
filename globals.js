@@ -68,4 +68,8 @@ module.exports = {
     image: '',
     interfaces: ['describe', 'it', 'context', 'suite', 'test'],
   },
+  cucumber: {
+    jsonFile: `${reports}/.cucumber/output.json`,
+    output: `${reports}/.cucumber/index.html`,
+  },
 };

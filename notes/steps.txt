@@ -9,7 +9,7 @@ React Native
 Unit Test Cases with Karma, Jasmine, Jest
 EsDocs
 Commitizen
-Docker with hot reloading
+Docker with Hot Reloading
 Redux
 ----
 BDD
@@ -19,4 +19,5 @@ Vagrant
 Flow
 Firebase
 Heroku
-Travis
+Travis CI
+GitLab CI

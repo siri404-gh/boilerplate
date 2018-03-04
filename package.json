@@ -63,20 +63,20 @@
   "scripts": {
     "cleanup": "./node_modules/.bin/rimraf _output _dist _reports _docs *.log TMPDIR/react-*",
     "cleanup:full": "yarn cleanup && ./node_modules/.bin/rimraf node_modules && yarn",
-    "lint": "./node_modules/.bin/eslint src -o=./_output/_reports/.eslint/index.html -f=html",
+    "lint": "./node_modules/.bin/eslint src -o=./_output/_reports/_eslint/index.html -f=html",
     "flow": "./node_modules/.bin/flow --pretty --quiet",
+    "test": "karma start",
     "docs": "./node_modules/.bin/esdoc -c=./.esdoc.js",
     "build": "./node_modules/.bin/webpack --config=webpack/webpack.config.js --env=prod --progress --profile --colors",
     "build:dev": "./node_modules/.bin/webpack-dev-server --config=webpack/webpack.config.js --env=dev --progress --profile --colors --open --hot --inline",
+    "bdd": "mkdir -p _output/_reports/_cucumber/ && CONFIG_FILE=single ./node_modules/.bin/cucumber-js bdd/features/single.feature -f json:_output/_reports/_cucumber/output.json && node cucumber-reporter",
     "start": "node server/server",
-    "test": "karma start",
     "eject": "react-native-scripts eject",
     "start:mobile": "react-native-scripts start",
     "start:mobile:android": "react-native-scripts android",
     "start:mobile:ios": "react-native-scripts ios",
     "test:mobile": "node node_modules/jest/bin/jest.js",
-    "docker": "docker-compose -f docker-compose-web.yml up",
-    "bdd": "mkdir -p _output/_reports/.cucumber/ && CONFIG_FILE=single ./node_modules/.bin/cucumber-js bdd/features/single.feature -f json:_output/_reports/.cucumber/output.json && node cucumber-reporter"
+    "docker": "docker-compose -f docker-compose-web.yml up"
   },
   "jest": {
     "preset": "jest-expo"

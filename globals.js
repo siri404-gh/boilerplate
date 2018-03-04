@@ -1,16 +1,19 @@
 const src = './src';
 const outputDir = './_output/';
-const dist = `${outputDir}_dist`;
-const docs = `${outputDir}_docs`;
-const reports = `${outputDir}_reports`;
-const coverageDir = `${outputDir}_coverage/`;
+const dist = `${outputDir}_dist/`;
+const docs = `${outputDir}_docs/`;
+const reports = `${outputDir}_reports/`;
+const coverageDir = `${reports}_coverage/`;
+const eslintDir = `./${reports}/_eslint/`;
+const bddDir = `${reports}_cucumber/`;
 const logs = './*.log';
 
 module.exports = {
   src,
   dist,
   docs,
-  eslintDir: `./${reports}/.eslint/`,
+  eslintDir,
+  bddDir,
   port: process.env.NODE_ENV || 5000,
   karma: {
     browsers: ['PhantomJS'],
@@ -69,7 +72,7 @@ module.exports = {
     interfaces: ['describe', 'it', 'context', 'suite', 'test'],
   },
   cucumber: {
-    jsonFile: `${reports}/.cucumber/output.json`,
-    output: `${reports}/.cucumber/index.html`,
+    jsonFile: `${bddDir}output.json`,
+    output: `${bddDir}index.html`,
   },
 };

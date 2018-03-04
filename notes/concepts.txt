@@ -14,3 +14,6 @@ Volume inside a docker image
 Hot reloading with docker?
 Pure Functions
 Dynamic Imports
+Static Type Checking using Flow
+BDD Using selenium-webdriver and Cucumber
+Browserstack

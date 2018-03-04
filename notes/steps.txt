@@ -1,23 +1,22 @@
 Yarn
-Eslint
-Editorconfig
-Webpack
-  Dev build
-  Prod build
+EsLint
+EditorConfig
+Webpack Dev build
+Webpack Prod build
 Express Server
 React
 React Native
-Unit Test Cases using Karma, Jasmine
-Esdocs
-----
+Unit Test Cases with Karma, Jasmine, Jest
+EsDocs
+Commitizen
+Docker with hot reloading
 Redux
+----
 BDD
 Pa11y
 Sitespeed
-Docker
 Vagrant
 Flow
 Firebase
 Heroku
 Travis
-Commitizen

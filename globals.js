@@ -52,11 +52,11 @@ module.exports = {
     sourceMapType: 'inline-source-map',
     bundle: 'bundle.js',
     host: 'localhost',
-    port: 4000,
+    port: 5000,
     publicPath: '/',
     cleanFolders: [logs, dist, reports],
     title: 'Title',
-    template: 'index.ejs',
+    template: 'templates/index.ejs',
     fileName: '.manifest.json',
   },
   esdoc: {

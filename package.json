@@ -65,7 +65,8 @@
     "start:mobile": "react-native-scripts start",
     "start:mobile:android": "react-native-scripts android",
     "start:mobile:ios": "react-native-scripts ios",
-    "test:mobile": "node node_modules/jest/bin/jest.js"
+    "test:mobile": "node node_modules/jest/bin/jest.js",
+    "docker": "docker-compose -f docker-compose-web.yml up"
   },
   "jest": {
     "preset": "jest-expo"

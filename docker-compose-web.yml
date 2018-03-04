@@ -1,0 +1,10 @@
+web:
+  build: .
+  ports:
+  - 5000:5000
+  volumes:
+  - ./src:/opt/app/src:rw
+  - ./webpack:/opt/app/webpack:rw
+  - ./templates:/opt/app/templates:rw
+  environment:
+  - NODE_ENV=development

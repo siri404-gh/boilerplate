@@ -1,8 +1,15 @@
-Why ESLint - https://youtu.be/hppJw2REb8g
+Yarn.lock
+Why ESLint
 Why Webpack
 Difference between dev build and prod build
 Sourcemaps
 Uglification
 Minification
 Difference between dependencies & devDependencies
-How to add Commit messages (imperative tense/ present tense)
+Commit messages (imperative tense/ present tense)
+Git rebase
+Docker, pros & cons
+Docker-compose
+Volume inside a docker image
+Hot reloading with docker?
+Pure Functions

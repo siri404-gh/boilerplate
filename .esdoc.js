@@ -1,17 +1,13 @@
-const src = './src/';
-const destination = './docs/';
-const title = 'bartrr';
-const description = '';
-const repository = '';
-const site = '';
-const twitter = '';
-const image = '';
-const interfaces = ["describe", "it", "context", "suite", "test"];
+const { src, docs,
+  esdoc: {
+    title, description, repository, site, twitter, image, interfaces
+  },
+} = require('./globals');
 
 module.exports = JSON.parse(JSON.stringify({
   "source": src,
-  "destination": destination,
-  "includes": ["\\src\\.js$"],
+  "destination": docs,
+  "includes": ["\\.js$"],
   "plugins": [
     {
       "name": "esdoc-standard-plugin",

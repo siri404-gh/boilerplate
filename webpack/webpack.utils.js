@@ -4,21 +4,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
-const entry = './index.js';
-const dist = './.dist';
-const logs = './*.log';
-const reports = './.reports';
-const outputFileName = '[name].bundle.js';
-const resolveExtensions = ['.js', '.json', '.jsx'];
-const sourceMapType = 'inline-source-map';
-const bundle = 'bundle.js';
-const host = 'localhost';
-const port = 4000;
-const publicPath = '/';
-const cleanFolders = [logs, dist, reports];
-const title = 'Title';
-const template = 'index.ejs';
-const fileName = '.manifest.json';
+const {
+  webpack: {
+    entry, dist, outputFileName, resolveExtensions, sourceMapType, bundle, host, port,
+    publicPath, cleanFolders, title, template, fileName,
+  },
+} = require('../globals');
 
 module.exports = {
   entry,

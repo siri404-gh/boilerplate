@@ -1,8 +1,13 @@
 .vscode
 dist
 .dist
+_dist
 reports
 .reports
+_reports
+output
+.output
+_output
 
 # expo
 .expo/

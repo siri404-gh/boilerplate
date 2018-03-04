@@ -12,6 +12,7 @@
     "bootstrap": "^4.0.0",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.10",
+    "expect": "^22.4.0",
     "expo": "^25.0.0",
     "html-webpack-plugin": "^3.0.3",
     "material-ui": "next",
@@ -52,18 +53,19 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src -o=./reports/.eslint/index.html -f=html",
+    "cleanup": "./node_modules/.bin/rimraf _output _dist _reports _docs *.log TMPDIR/react-*",
+    "cleanup:full": "yarn cleanup && ./node_modules/.bin/rimraf node_modules && yarn",
+    "lint": "./node_modules/.bin/eslint src -o=./_output/_reports/.eslint/index.html -f=html",
+    "docs": "./node_modules/.bin/esdoc -c=./.esdoc.js",
     "build": "./node_modules/.bin/webpack --config=webpack/webpack.config.js --env=prod --progress --profile --colors",
     "build:dev": "./node_modules/.bin/webpack-dev-server --config=webpack/webpack.config.js --env=dev --progress --profile --colors --open --hot --inline",
     "start": "node server/server",
-    "cleanup": "./node_modules/.bin/rimraf .dist reports *.log TMPDIR/react-*",
-    "cleanup:full": "yarn cleanup && ./node_modules/.bin/rimraf node_modules && yarn",
+    "test": "karma start",
     "eject": "react-native-scripts eject",
     "start:mobile": "react-native-scripts start",
     "start:mobile:android": "react-native-scripts android",
     "start:mobile:ios": "react-native-scripts ios",
-    "test:mobile": "node node_modules/jest/bin/jest.js",
-    "docs": "./node_modules/.bin/esdoc -c=./.esdoc.js"
+    "test:mobile": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
     "preset": "jest-expo"

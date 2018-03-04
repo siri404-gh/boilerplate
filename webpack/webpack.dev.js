@@ -2,7 +2,7 @@ const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
 
 const {
-  outputFileName, sourceMapType, devServer, cleanWebpackPlugin, htmlWebpackPlugin,
+  outputFileName, sourceMapType, devServer, htmlWebpackPlugin,
 } = require('./webpack.utils');
 
 module.exports = Merge(CommonConfig, {
@@ -12,7 +12,6 @@ module.exports = Merge(CommonConfig, {
   },
   devServer,
   plugins: [
-    cleanWebpackPlugin,
     htmlWebpackPlugin,
   ],
   mode: 'development',

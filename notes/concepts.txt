@@ -5,3 +5,4 @@ Sourcemaps
 Uglification
 Minification
 Difference between dependencies & devDependencies
+How to add Commit messages (imperative tense/ present tense)

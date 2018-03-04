@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "body-parser": "^1.18.2",
+    "esdoc": "^1.0.3",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^4.18.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
@@ -60,7 +62,8 @@
     "start:mobile": "react-native-scripts start",
     "start:mobile:android": "react-native-scripts android",
     "start:mobile:ios": "react-native-scripts ios",
-    "test:mobile": "node node_modules/jest/bin/jest.js"
+    "test:mobile": "node node_modules/jest/bin/jest.js",
+    "docs": "./node_modules/.bin/esdoc -c=./.esdoc.js"
   },
   "jest": {
     "preset": "jest-expo"

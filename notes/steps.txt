@@ -8,9 +8,9 @@ Express Server
 React
 React Native
 Unit Test Cases using Karma, Jasmine
+Esdocs
 ----
 Redux
-Esdocs
 BDD
 Pa11y
 Sitespeed

@@ -7,10 +7,10 @@ Webpack
 Express Server
 React
 React Native
+Unit Test Cases using Karma, Jasmine
 ----
 Redux
 Esdocs
-Unit Test Cases
 BDD
 Pa11y
 Sitespeed

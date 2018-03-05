@@ -34,8 +34,7 @@ module.exports = {
     },
     reporters: ['spec', 'coverage'],
     exclude: [
-      `./${src}/**/*.android.test.js`,
-      `./${src}/**/*.ios.test.js`,
+      `./${src}/components/mobile/**`,
     ],
     files: [`${src}/**/*.test.js`],
     frameworks: ['jasmine'],

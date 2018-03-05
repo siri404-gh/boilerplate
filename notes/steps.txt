@@ -10,14 +10,15 @@ Unit Test Cases with Karma, Jasmine, Jest
 EsDocs
 Commitizen
 Docker with Hot Reloading
-Redux
 BDD
 Flow https://www.youtube.com/watch?v=0HlqX4lQZas
-----
 Pa11y
 Sitespeed
+----
+Redux
+GitLab CI
+----
 Vagrant
 Firebase
 Heroku
 Travis CI
-GitLab CI
